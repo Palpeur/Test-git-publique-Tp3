@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EquiGest</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="img/business-and-trade.png">
+	<meta name="description" content="EquiGest s'agit d'une application qui permet de gérer des employés">
+</head>
+
+<body>
+	<!-- Vous devez ajouter vos balises sous ce commentaire -->
+	<header>
+		<div class="container navFlex">
+			<h1 class="logo"><img src="img/equigest-logo-pale.png" alt="EquiGest"></h1>
+			<nav>
+				<ul>
+					<li><a href="Employés.html">Employés</a></li>
+					<li><a href="CréerUnEmployé.html">Créer un employé</a></li>
+					<li><a href="FicheEmployés.Html">Mon compte</a></li>
+				</ul>
+				
+			</nav>
+			<img class="visible-nav" src="img/menu-mobile.svg" alt="icon-menu">
+		</div>
+	</header>
+	<main>
+		<div class="container" id="index">
+			<ul class="container-grid">
+				<li class="non-visible-index"><img src="img/Img1.jpg" alt="Employer 1"></li>
+				<li class="non-visible-index"><img src="img/Img2.jpg" alt="Employer 2"></li>
+				<li class="petite-boite non-visible-index grandeCase"><img src="img/Img3.jpg" alt="Employer 3"></li>
+				<li id="form" class="grandeCase">
+					<form method="post" action="Employés.Html" id="form-index">
+						<h2>Connexion</h2>
+						<label for="utilisateur-compte">Nom d'utilisateur :</label>
+						<input type="text" name="utilisateur-compte" id="utilisateur-compte" class="big-box">
+						<label for="pass-compte">Mot de passe :</label>
+						<input type="password" name="pass-compte" id="pass-compte" class="big-box">
+						<input class="btn" type="submit" value="Me connecter">
+					</form>
+				</li>
+				<li ><img src="img/Img4.jpg" alt="Employer 4"></li>
+				<li ><img src="img/Img5.jpg" alt="Employer 5"></li>
+			</ul>
+		</div>
+	</main>
+	<footer>
+		<div class=" footer-info footer-flex">
+			<p><strong>EquiGest</strong> : 1660 Bool. de l'Entente, Québec</p>
+			<address>
+				<a class="btn" href="tel:+14181234567">418-123-4567</a>
+			</address>
+		</div>
+		<div class="container center test">
+			<p>Site réaliser par : <strong>Jean-Philippe Beaudoin</strong>  </p>
+			<p>   Dans le cadre du programme Techniques de l'informatique - Cégep Garneau</p>
+		</div>
+	</footer>
+</body>
+
+</html>

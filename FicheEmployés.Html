@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EquiGest</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="img/business-and-trade.png">
+</head>
+
+<body>
+	<!-- Vous devez ajouter vos balises sous ce commentaire -->
+	<header>
+		<div class="container navFlex">
+			<a class="logo" href="index.html"><img src="img/equigest-logo-pale.png" alt="EquiGest"></a>
+			<nav>
+				<ul>
+					<li><a href="Employés.html">Employés</a></li>
+					<li><a href="CréerUnEmployé.html">Créer un employé</a></li>
+					<li><a href="FicheEmployés.Html">Mon compte</a></li>
+				</ul>
+
+			</nav>
+			<img class="visible-nav" src="img/menu-mobile.svg" alt="icon-menu">
+		</div>
+	</header>
+	<main class="container">
+		<h1>NOM - Prénom</h1>
+		<section>
+			<div id="information">
+				<h2>Information</h2>
+				<div class="flex-info">
+					<img class="non-visible-fiche" src="img/Img9.jpg" alt="Boss">
+					<div class="info-contenu">
+						<h3>Contact</h3>
+						<ul>
+							<li class="flex-info-li">
+								<p>Téléphone (Travail)</p>
+								<address>
+									<a href="tel:+14185551234">418-555-1234</a>
+								</address>
+							</li>
+							<li class="flex-info-li">
+								<p>Téléphone (Personnel)</p>
+								<address>
+									<a href="tel:+14185555678">418-555-5678</a>
+								</address>
+							</li>
+							<li class="flex-info-li">
+								<p>Courriel</p>
+								<address>
+									<a href="mailto:prenom-nom@mail.com">prénom-nom@mail.com</a>
+								</address>
+							</li>
+						</ul>
+						<a class="btn" href="#">Voir plus d'informations</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h2>Gestion des paies</h2>
+
+			<div class="paie-flex">
+				<div class="gestion-paie-operation">
+					<h3>Opérations</h3>
+					<div class="bouton-paie-flex">
+						<a class="btn" href="#">Créer une paie</a>
+						<a class="btn" href="#">Modifier une paie</a>
+						<a class="btn" href="#">Générer les feuillets fiscaux</a>
+					</div>
+				</div>
+				<div class="defilement-horizontale gestion-paie">
+					<h3>Dernières paies</h3>
+						<table>
+							<tr class="table-header">
+								<th>Date d'émission</th>
+								<th>Gains</th>
+								<th>Déductions</th>
+								<th>Dépôt</th>
+								<th>Détails</th>
+							</tr>
+							<tr>
+								<td><time datetime="2023-10-19">2023-10-19</time></td>
+								<td>2597,25</td>
+								<td>758,88</td>
+								<td>1838.37</td>
+								<td><a href="#">Voir le PDF</a></td>
+							</tr>
+							<tr>
+								<td><time datetime="2023-10-05">2023-10-05</time></td>
+								<td>2597,25</td>
+								<td>758,88</td>
+								<td>1838.37</td>
+								<td><a href="#">Voir le PDF</a></td>
+							</tr>
+							<tr>
+								<td><time datetime="2023-09-21">2023-09-21</time></td>
+								<td>2597,25</td>
+								<td>758,88</td>
+								<td>1838.37</td>
+								<td><a href="#">Voir le PDF</a></td>
+							</tr>
+							<tr>
+								<td><time datetime="2023-09-07">2023-09-07</time></td>
+								<td>2597,25</td>
+								<td>758,88</td>
+								<td>1838.37</td>
+								<td><a href="#">Voir le PDF</a></td>
+							</tr>
+							<tr>
+								<td><time datetime="2023-08-24">2023-08-24</time></td>
+								<td>2597,25</td>
+								<td>758,88</td>
+								<td>1838.37</td>
+								<td><a href="#">Voir le PDF</a></td>
+							</tr>
+						</table>
+					<a class="btn" href="#">Voir toutes les paies</a>
+				</div>
+			</div>
+
+		</section>
+	</main>
+	<footer>
+		<div class=" footer-info footer-flex">
+			<p><strong>EquiGest</strong> : 1660 Bool. de l'Entente, Québec</p>
+			<address>
+				<a class="btn" href="tel:+14181234567">418-123-4567</a>
+			</address>
+		</div>
+		<div class="container center">
+			<p>Site réaliser par : <strong>Jean-Philippe Beaudoin</strong> </p>
+				<p> Dans le cadre du programme Techniques de l'informatique - Cégep Garneau</p>
+		</div>
+	</footer>
+</body>
+
+</html>

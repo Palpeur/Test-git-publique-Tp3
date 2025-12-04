@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	scroll-behavior: smooth;
+
+}
+
+
+/* Typographies / Couleurs (exemples : titres, paragraphes, liens, etc.)
+========================================================================== */
+
+body {
+	background-color: white;
+	font-family: "Saira", sans-serif;
+	font-style: normal;
+	font-size: 1.2rem;
+	font-weight: 500;
+	line-height: 1.8rem;
+	background-color: #171717;
+	overflow-x: hidden;
+	color: #fff;
+}
+
+h1 {
+	font-size: 3rem;
+	padding: 3.9px 0;
+}
+
+h2 {
+	font-size: 2rem;
+	background-color: rgb(87, 87, 87);
+	padding: 20px;
+	margin-bottom: 20px;
+	margin-top: 0px;
+	width: 100%;
+}
+
+h3 {
+	font-size: 2rem;
+	margin: 20px 0;
+	color: black;
+}
+
+
+.nom-gros {
+	font-size: 2rem;
+	margin: 10px 0;
+}
+
+.nom-petit {
+	font-size: 0.9rem;
+}
+
+.indicateurNav {
+	border-bottom: #fff solid 2px;
+}
+
+table a {
+	text-decoration: none;
+	color: black;
+}
+
+table a:hover {
+	text-decoration: underline;
+}
+
+/* Mise en page (positionnement)
+========================================================================== */
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.grandeCase {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+.grid-employer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.container-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+}
+
+/* Header / Navigations / Footer 
+========================================================================== */
+header {
+	background-color: rgb(87, 87, 87);
+}
+
+.footer-info {
+	background-color: rgb(87, 87, 87);
+	padding: 20px 0;
+	font-size: 1.2rem;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav li a {
+	text-decoration: none;
+	padding: 10px;
+	font-size: 1.5rem;
+	color: #fff;
+}
+
+main ul li {
+	list-style: none;
+}
+
+/* Composantes générales (exemples : section, cartes, tableaux, etc.)
+========================================================================== */
+img {
+	max-width: 100%;
+}
+
+
+
+ul {
+	padding: 0;
+}
+
+
+/* Formulaires
+========================================================================== */
+#form-index {
+	padding: 20px;
+
+}
+
+#form {
+	background-color: #9c9c9c;
+}
+
+input {
+	border-radius: 3px;
+	border: 1px solid #9c9c9c;
+	font-size: 1.5rem
+}
+
+.big-box {
+	padding: 12px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.TxtArea {
+	padding-bottom: 80px;
+}
+
+#recherche-nav input {
+	padding: 15px 10px;
+	font-size: 1.1rem;
+}
+
+#recherche-nav {
+	width: 100%;
+}
+
+#recherche-nav input[type=text] {
+	width: 50%;
+}
+
+.recherche {
+	display: flex;
+	justify-content: end;
+
+}
+
+#recherche-nav input[type=submit] {
+	background-color: rgb(87, 87, 87);
+	color: #fff;
+}
+
+.form-creer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+
+}
+
+.larg-100 {
+	width: 100%;
+}
+
+.marg-bas {
+	margin-bottom: 30px;
+}
+
+fieldset {
+	margin-bottom: 30px;
+	padding: 20px;
+}
+
+.small-input {
+	max-width: 100px;
+}
+
+span {
+	color: red;
+	font-weight: bold;
+}
+
+/* Règles spécifiques aux pages
+========================================================================== */
+
+.logo {
+	margin: 20px;
+}
+
+#index {
+	padding: 30px 0;
+}
+
+.flex-employer p {
+	margin: 0;
+}
+
+#Employés ul {
+	margin-bottom: 40px;
+}
+
+.info-contenu {
+	width: 100%;
+	margin-left: 20px;
+	padding: 20px 20px 40px;
+	background-color: #dadada;
+	color: black;
+	text-decoration: none;
+}
+
+#information ul {
+	margin-bottom: 40px;
+}
+
+#information a {
+	color: black;
+	text-decoration: none;
+}
+
+#information li {
+	border-bottom: solid 1px black;
+}
+
+.gestion-paie-operation {
+	background-color: #dadada;
+	padding: 20px;
+	margin: 10px;
+}
+
+.gestion-paie {
+	background-color: #dadada;
+	padding: 20px 20px 30px;
+	margin: 10px;
+}
+
+/*Flex
+========================================================================== */
+.flex-cotes {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flex-employer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer-flex {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navFlex {
+	display: flex;
+	justify-content: space-around;
+}
+
+.flex-info {
+	display: flex;
+	margin: 60px 0;
+	align-items: flex-start;
+}
+
+.flex-info-li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.bouton-paie-flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.paie-flex {
+	display: flex;
+	align-items: flex-start;
+}
+
+
+/* Bouton
+========================================================================== */
+
+footer .btn {
+	background-color: rgb(58, 58, 58);
+	padding: 13px 20px;
+	color: white;
+	text-decoration: none;
+	border: transparent solid 3px;
+}
+
+footer .btn:hover {
+	border-radius: 15px;
+	border: #fff solid 3px;
+}
+
+#form-index .btn {
+	background-color: rgb(58, 58, 58);
+	padding: 13px 20px;
+	color: white;
+	text-decoration: none;
+	border: transparent solid 3px;
+	margin: 10px 0;
+}
+
+#form-index .btn:hover {
+	border-radius: 15px;
+	border: #fff solid 3px;
+}
+
+#Employés .btn {
+	padding: 10px;
+	background-color: rgb(87, 87, 87);
+	margin: 10px 0;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 15px;
+	border: transparent solid 2px;
+}
+
+#Employés .btn:hover {
+	border: #fff solid 2px;
+}
+
+#information .btn {
+	padding: 10px;
+	background-color: rgb(87, 87, 87);
+	color: #fff;
+	text-decoration: none;
+	border-radius: 15px;
+	border: transparent solid 3px;
+}
+
+#information .btn:hover {
+	border: #000000 solid 3px;
+}
+
+.gestion-paie-operation .btn {
+	padding: 10px;
+	background-color: rgb(87, 87, 87);
+	margin: 10px 0;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 15px;
+	border: transparent solid 3px;
+}
+
+.gestion-paie-operation .btn:hover {
+	border: #fff solid 3px;
+}
+
+.gestion-paie .btn {
+	padding: 10px;
+	background-color: rgb(87, 87, 87);
+	margin: 10px 0;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 15px;
+	border: transparent solid 3px;
+}
+
+.gestion-paie .btn:hover {
+	border: #fff solid 3px;
+}
+
+.form-creer .btn {
+	padding: 10px;
+	background-color: rgb(87, 87, 87);
+	margin: 10px 0;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 15px;
+	border: transparent solid 3px;
+}
+
+.form-creer .btn:hover {
+	border: #fff solid 3px;
+}
+
+/* Table
+========================================================================== */
+table {
+	color: black;
+	border-collapse: collapse;
+	border: black solid 4px;
+	text-align: center;
+	margin-bottom: 40px;
+
+
+}
+
+.table-header {
+	border: black solid 4px;
+}
+
+th {
+	border: black solid 2px;
+	padding: 5px 20px;
+}
+
+td {
+	border: black solid 2px;
+	padding: 5px 20px;
+}
+
+/* Responsive
+========================================================================== */
+
+@media screen and (max-width: 1199px) {
+	.form-creer {
+		grid-template-columns: 1fr;
+		justify-content: center;
+	}
+	.larg-100{
+		width: 90%;
+	}
+}
+
+@media screen and (min-width: 961px) {
+	.visible-nav {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	header nav {
+		display: none;
+	}
+
+	.visible-nav {
+		display: block;
+	}
+
+	.petite-boite {
+		grid-column: span 1;
+		grid-row: span 1;
+	}
+
+	.container-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.grid-employer {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.non-visible-fiche {
+		width: 40%;
+	}
+
+	.defilement-horizontale {
+		overflow-x: scroll;
+	}
+
+	.larg-100{
+		width: 85%;
+	}
+	.form-creer{
+		justify-items: center;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.non-visible-fiche {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.container-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.non-visible-index {
+		display: none;
+	}
+
+	.grid-employer {
+		grid-template-columns: 1fr;
+	}
+	.larg-100{
+		width: 70%;
+
+	}
+}
+
+@media print{
+	
+	header,footer{
+		display: none;
+	}
+	.flex-cotes form{
+		display: none;
+	}
+	.gestion-paie-operation{
+		display: none;
+	}
+	.info-contenu .btn{
+		display: none;
+	}
+}

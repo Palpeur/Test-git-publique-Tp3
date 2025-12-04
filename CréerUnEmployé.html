@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EquiGest</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="img/business-and-trade.png">
+</head>
+
+<body>
+	<!-- Vous devez ajouter vos balises sous ce commentaire -->
+	<header>
+		<div class="container navFlex">
+			<a class="logo" href="index.html"><img src="img/equigest-logo-pale.png" alt="EquiGest"></a>
+			<nav>
+				<ul>
+					<li><a href="Employés.html">Employés</a></li>
+					<li><a href="CréerUnEmployé.html">Créer un employé</a></li>
+					<li><a href="FicheEmployés.Html">Mon compte</a></li>
+				</ul>
+
+			</nav>
+			<img class="visible-nav" src="img/menu-mobile.svg" alt="icon-menu">
+		</div>
+	</header>
+	<main class="container">
+		<h1>Créer un Employé</h1>
+
+		<form method="post" action="https://nrichardgarneau.pythonanywhere.com/" class="form-creer">
+			<fieldset class="larg-100">
+				<legend>Détail de l'employé</legend>
+				<div class="marg-bas">
+					<label for="txt-nom">Nom de l'employé<span>*</span></label>
+					<input type="text" id="txt-nom" name="txt-nom" class="big-box" placeholder="Nom" required>
+				</div>
+				<div class="marg-bas">
+					<label for="txt-prenom">Prénom de l'employé<span>*</span></label>
+					<input type="text" id="txt-prenom" name="txt-prénom" class="big-box" placeholder="Prénom"
+						required>
+				</div>
+				<div class="marg-bas">
+					<label for="tel-compte">Le téléphone de l'employé<span>*</span></label>
+					<input type="tel" name="tel-compte" id="tel-compte" class="big-box" placeholder="418-123-4567"
+						required>
+				</div>
+				<div class="marg-bas">
+					<label for="mail-compte">Le courriel de l'employé<span>*</span></label>
+					<input type="email" name="mail-compte" id="mail-compte" class="big-box" placeholder="xyz@mail.com"
+						required>
+				</div>
+				<div class="marg-bas">
+					<label for="selc-communication">Mode de communication préféré de l'employé<span>*</span></label>
+					<select name="selc-communication" id="selc-communication" class="big-box" required>
+						<option value="" selected>Type de communication</option>
+						<option value="Téléphone">Téléphone</option>
+						<option value="Texto">Texto</option>
+						<option value="Courriel">Courriel</option>
+					</select>
+				</div>
+			</fieldset>
+			<div class="larg-100">
+				<fieldset>
+					<legend>Détail de l'embauche</legend>
+					<div class="marg-bas">
+						<label for="date-emb">Date de l'embauche <span>*</span></label>
+						<input type="date" name="date-emb" class="big-box" id="date-emb" required>
+					</div>
+					<div class="marg-bas">
+						<label for="selc-poste">Type de poste <span>*</span></label>
+						<select name="selc-poste" id="selc-poste" class="big-box" required>
+							<option value="" selected>Poste</option>
+							<option value="Direction">Direction</option>
+							<option value="Administratio">Administration</option>
+							<option value="Marketin">Marketing</option>
+							<option value="Ressources humaines">Ressources humaines</option>
+							<option value="Vente"> Vente</option>
+							<option value="Finance">Finance</option>
+							<option value="Manutention">Manutention</option>
+							<option value="Informatique">Informatique</option>
+							<option value="Design">Design</option>
+							<option value="Ingénierie">Ingénierie</option>
+							<option value="Journalier">Journalier</option>
+						</select>
+					</div>
+					<div class="marg-bas">
+						<input type="checkbox" id="chek-arret-travail" name="chek-arret-travail" >
+						<label for="chek-arret-travail">Est-il en arrêt de travail</label>
+					</div>
+					<div class="marg-bas">
+						<label for="txt-message">Message</label>
+						<textarea class="big-box TxtArea" id="txt-message" name="txt-message" maxlength="400" placeholder="Message ici" ></textarea>
+					</div>
+				</fieldset>
+				<div class="marg-bas submit">
+					<input class="btn" type="submit" value="Soumettre">
+				</div>
+			</div>
+		</form>
+
+	</main>
+	<footer>
+		<div class=" footer-info footer-flex">
+			<p><strong>EquiGest</strong> : 1660 Bool. de l'Entente, Québec</p>
+			<address>
+				<a class="btn" href="tel:+14181234567">418-123-4567</a>
+			</address>
+		</div>
+		<div class="container center ">
+			<p>Site réaliser par : <strong>Jean-Philippe Beaudoin</strong> </p>
+			<p> Dans le cadre du programme Techniques de l'informatique - Cégep Garneau</p>
+		</div>
+	</footer>
+</body>
+
+</html>
