@@ -454,6 +454,8 @@ td {
 	padding: 5px 20px;
 }
 
+
+
 /* Responsive
 ========================================================================== */
 
@@ -532,6 +534,12 @@ td {
 	.larg-100{
 		width: 70%;
 
+	}
+}
+
+@media screen and (max-width: 551px) {
+	.footer-info address a{
+		padding: 0;
 	}
 }
 
